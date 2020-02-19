@@ -1,0 +1,23 @@
+/*importar otros css*/
+@import url(menu.css);
+
+/* Resetear */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    /* Se quede posicionado el header */
+        position: fixed;
+        top: 0;
+        left: 0;
+    /* header tape a los demas */
+        z-index: 100;
+}

@@ -1,0 +1,26 @@
+nav li a{
+    /* BOTONES NAV*/
+    position: static;
+    width: 180px;
+    height: 60px;
+    left: 530px;
+    top: 25px;
+    background: #38C5C2;
+    border-radius: 20px;
+    margin: auto;
+    /* LETRA*/
+    position: static;
+    width: 98px;
+    height: 22px;
+    left: 571px;
+    top: 39px;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #283A78;
+    mix-blend-mode: normal;
+}
