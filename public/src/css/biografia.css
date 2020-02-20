@@ -1,0 +1,10 @@
+.biography{
+    background-color: aqua;
+}
+
+.card{
+    background: #38C5C2;
+    border-radius: 30px;
+    width: 375px;
+    height: 273px;
+}

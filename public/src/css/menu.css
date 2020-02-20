@@ -1,13 +1,4 @@
-nav li a{
-    /* BOTONES NAV*/
-    position: absolute;
-    width: 18 0px;
-    height: 50px;
-    left: 530px;
-    top: 25px;
-    background: #38C5C2;
-    border-radius: 20px;
-    overflow: hidden;
+nav ul li a{
     /* LETRA*/
     position: static;
     width: 98px;
@@ -20,3 +11,17 @@ nav li a{
     /* identical to box height */
     color: #283A78;
 }
+
+nav ul li a:hover {
+        /* BOTONES NAV*/
+        width: 100px;
+        height: 50px;
+        top: 25px;
+        background: #38C5C2;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: #283A78;
+  }
