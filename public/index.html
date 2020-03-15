@@ -1,86 +1,438 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1,maximun-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="src/css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--estilos css-->
     <link rel="stylesheet" href="src/css/estilos.css">
-    <title>Portafolio</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/svg+xml" href="imagenes/logo.svg" sizes="any">
 </head>
 
-<body>
-    <!--Navegacion-->
-    <header>
-        <nav class="navbar navbar-expand-sm fixed-top">
+<body class="fondo">
+    <!--navegacion-->
+    <div class="navbar-fixed">
+        <nav class="amber">
             <div class="container">
-                <a href="#" class="navbar-brand">DFlores</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapsado">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="colapsado">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" ><a href="#" class="p-2 m-2">Biografía</a></li>
-                        <li class="nav-item" ><a href="#" class="p-2 m-2">Proyectos</a></li>
-                        <li class="nav-item" ><a href="#" class="p-2 m-2">Servicios</a></li>
-                        <li class="nav-item" ><a href="#" class="p-2 m-2">Contacto</a></li>
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo cyan-text accent-3-text"><img src="imagenes/logo.svg"></a>
+                    <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                            class="material-icons brown-text">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#biography" class="indigo-text text-darken-4">Biografía</a></li>
+                        <li><a href="#proyects" class="indigo-text text-darken-4">Proyectos</a></li>
+                        <li><a href="#services" class="indigo-text text-darken-4">Servicios</a></li>
+                        <li><a href="#contacs" class="indigo-text text-darken-4">Contáctame</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container mt-5 pt-5">
+    </div>
+    <ul class="sidenav amber" id="mobile-demo">
+        <li><a href="#biography" class="indigo-text text-darken-4">Biografía</a></li>
+        <li class="divider cyan accent-3"></li>
+        <li><a href="#proyects" class="indigo-text text-darken-4">Proyectos</a></li>
+        <li class="divider cyan accent-3"></li>
+        <li><a href="#services" class="indigo-text text-darken-4">Servicios</a></li>
+        <li class="divider cyan accent-3"></li>
+        <li><a href="#contacs" class="indigo-text text-darken-4">Contáctame</a></li>
+    </ul>
+    <!--fin de navegación-->
+    <main>
+        <!--Prallax-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="imagenes/parallax.jpg"></div>
+        </div>
+        <!--Fin prallax-->
+        <!--Inicio biografía-->
         <section id="biography">
-            <div class="row">
-                <div class="col-4">
-                    <img src="imagenes/perfil.svg" class="img-fluid d-block rounded-circle">
+            <div class="container">
+                <div class="col s12 m12 l12">
+                    <h1 class="cyan-text">Sobre mí</h1>
                 </div>
-                <div class="col-4">
-                    <div class="card position-absolute">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                            content.</p>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="card radius cyan">
+                            <div class="card-content">
+                                <span class="card-title"><b>Me gusta</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="card radius cyan">
+                            <div class="card-content">
+                                <span class="card-title"><b>Especialización</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card position-absolute">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                            content.</p>
+                <!--mis competencias-->
+                <div class="col s12 m12 l12">
+                    <h1 class="amber-text">Mis competencias</h1>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="card radius yellow lighten-3">
+                            <div class="card-content">
+                                <span class="card-title indigo-text"><b>Conocimientos</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
                         </div>
-                        
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="card radius yellow lighten-3">
+                            <div class="card-content">
+                                <span class="card-title indigo-text"><b>Habilidades blandas</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="card radius">
+                            <div class="card-image">
+                                <div class="responsive-img">
+                                    <img class="materialboxed" src="imagenes/banner.jpg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!--Fin biografía-->
+        <!--Inicio proyectos-->
+        <section id="proyects">
+            <div class="container">
+                <div class="col s12 m12 l12">
+                    <h1 class="indigo-text">Mis Proyectos</h1>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--3 card más-->
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--3 card más-->
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/img-proyect.svg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator indigo-text text-darken-4">Nombre del proyecto<i
+                                        class="material-icons right">more_vert</i></span>
+                                <p><a href="#">link</a></p>
+                            </div>
+                            <div class="card-reveal cyan lighten-5">
+                                <span class="card-title indigo-text text-darken-4">Detalle del proyecto<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin proyectos-->
+        <!--parallax-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="imagenes/parallax2.jpg"></div>
+        </div>
+        <!--fin parallax-->
+        <!--inicio de servicios-->
+        <section id="services">
+            <div class="container">
+                <div class="col s12 m12 l12">
+                    <h1 class="black-text">Mis Servicios</h1>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4 l4">
+                        <div class="card radius  blue-grey lighten-4">
+                            <div class="card-content">
+                                <span class="card-title"><b>Diseño de planos</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <div class="card radius yellow lighten-3">
+                            <div class="card-content">
+                                <span class="card-title"><b>Diseño de planos</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <div class="card radius  blue-grey lighten-4">
+                            <div class="card-content">
+                                <span class="card-title"><b>Diseño de planos</b></span>
+                                <p class="indigo-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    At adipisci quis dolores numquam.
+                                    Quaerat reprehenderit laborum consectetur dolorum? Ab corrupti
+                                    eaque deleniti sequi facere maxime non unde in totam aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <!--Fin de servicios-->
+        <!--Inicio de contáctanos-->
+        <section id="contacs">
+            <div class="container">
+                <div class="row">
+                    <form class="col s12 m12 l8">
+                        <h1 class="cyan-text">Envianos un mensaje</h1>
+                        <div class="row">
+                            <div class="input-field col s12 m6 l6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Nombres:</label>
+                            </div>
+                            <div class="input-field col s12 m6 l6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix2" type="text" class="validate">
+                                <label for="icon_prefix2">Apellidos:</label>
+                            </div>
+                            <div class="input-field col s12 m6 l6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone" type="tel" class="validate">
+                                <label for="icon_telephone">Correo electrónico:</label>
+                            </div>
+                            <div class="input-field col s12 m6 l6">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_email" type="tel" class="validate">
+                                <label for="icon_email">Celular:</label>
+                            </div>
+                            <div class="input-field col s12 m12 l12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix3" class="materialize-textarea"></textarea>
+                                <label for="icon_prefix3">Mensaje:</label>
+                            </div>
+                        </div>
+                        <button class="btn indigo-text amber" type="submit" name="action">Enviar
+                            <i class="material-icons right">send</i>
+                          </button>
+                    </form>
+                    <div class="col s12 m12 l4">
+                        <div class="row">
+                            <h1 class="cyan-text">Encuentranos en las redes sociales</h1>
+                            <div class="col s12 m6 l6">
+                                <a href="https://www.linkedin.com/in/david-flores-naupari-30717b131/" target="_blank"><img src="imagenes/linkedin.svg" alt="mi linkedind"></a>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <a href="https://web.facebook.com/david.floresnaupari" target="_blank"><img src="imagenes/facebook.svg" alt="mi linkedind"></a>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <a href="https://api.whatsapp.com/send?phone=926344393&text=Hola%20,%20en%20que%20puedo%20ayudarte" target="_blank"><img src="imagenes/whatsapp.svg" alt="mi whatsapp"></a>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <a href="mailto:lesly.selene.96@gmail.com" target="_blank"><img src="imagenes/gmail.svg" alt="mi correo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin de contactáctanos-->
+        <!--footer-->
+        <footer class="page-footer indigo">
+            <div class="footer-copyright">
+                <div class="container">
+                    <a class="white-text text-lighten-4 right"
+                        href="https://pe.linkedin.com/in/lesly-veronica-samaritano-ayala-842153183">Lesly Samaritano
+                        Ayala</a>
+                    © 2020 Copyright Text
+                </div>
+            </div>
+        </footer>
+    </main>
 
-    </div>
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="src/js/materialize.min.js"></script>
+    <script type="text/javascript" src="src/js/init.js"></script>
 </body>
 
 </html>
